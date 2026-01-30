@@ -1,0 +1,4 @@
+Version 1.0 - Simple game with 3 difficulty levels; 0-10, 0-50, 0-100;
+
+Version 1.1 - Added Sound & Vibration toggle buttons.
+            - Added About Page.

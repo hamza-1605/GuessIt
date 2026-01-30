@@ -1,0 +1,108 @@
+------------------------------------------------
+
+          Interface for welcoming ☑️
+
+------------------------------------------------
+------------------------------------------------
+
+            Difficulties level ☑️
+
+------------------------------------------------
+------------------------------------------------
+
+              Limited Guesses ☑️
+
+------------------------------------------------
+------------------------------------------------
+
+        Clear keyboard after guess ☑️
+
+------------------------------------------------
+------------------------------------------------
+
+            Array of wrong guesses ☑️
+
+------------------------------------------------
+------------------------------------------------
+
+                Instructions Page ☑️
+
+------------------------------------------------
+------------------------------------------------
+
+                Add Custom Icon ☑️
+
+------------------------------------------------
+------------------------------------------------
+
+          Sound & Vibration Toggle ☑️
+
+------------------------------------------------
+------------------------------------------------
+
+        Ego Booster (info page xD) ☑️
+
+------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// final fadeTween = Tween<double>(begin: 0.1, end: 1.0)
+//   .chain( CurveTween(curve: Curves.easeIn) );
+// final scaleTween = Tween<double>(begin: 0.5, end: 1.0)
+//   .chain( CurveTween(curve: Curves.easeIn) );
+
+// final popTween = Tween<Offset>( begin: Offset(0, -0.5), end: Offset(0, 0))
+//   .chain( CurveTween(curve: Curves.easeOut));
+// final fadePopTween = Tween<double>( begin: 0.1, end: 1.0)
+//   .chain( CurveTween(curve: Curves.easeOut));
+
+
+// if( animation.status == AnimationStatus.reverse ){
+//   return FadeTransition(
+//     opacity: animation.drive( fadePopTween ),
+//     child: SlideTransition(
+//       position: animation.drive( popTween ),
+//       child: child,
+//     ),
+//   );
+// }
+
+// return FadeTransition(
+//   opacity: animation.drive(fadeTween),
+//   child: ScaleTransition(
+//     scale: animation.drive(scaleTween),
+//     child: child,
+//   ),
+// );
+
+// final curvedAnimation = CurvedAnimation(
+//   parent: animation,
+//   curve: Curves.easeIn,
+//   reverseCurve: Curves.easeOut,
+// ); 
