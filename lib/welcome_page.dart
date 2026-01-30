@@ -58,8 +58,8 @@ class _WelcomePageState extends State<WelcomePage> {
                   ]
                   else ...[
                     MenuButton(title: "Easy", function: () => enterGameMode(10), player: player, sharedPref: sharedPref),
-                    MenuButton(title: "Medium", function: () => enterGameMode(10), player: player, sharedPref: sharedPref),
-                    MenuButton(title: "Hard", function: () => enterGameMode(10), player: player, sharedPref: sharedPref),
+                    MenuButton(title: "Medium", function: () => enterGameMode(50), player: player, sharedPref: sharedPref),
+                    MenuButton(title: "Hard", function: () => enterGameMode(100), player: player, sharedPref: sharedPref),
                     MenuButton(title: "Back", function: () => setState(() => play=false), player: player, sharedPref: sharedPref),
                   ],
                    
