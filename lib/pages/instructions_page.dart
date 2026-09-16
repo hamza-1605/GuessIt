@@ -40,9 +40,9 @@ class InstructionsPage extends StatelessWidget {
             ),
 
             MyRichText( heading: "", body: "The range depends as per the difficulty mode:"),
-            MyRichText( heading: "Easy: ", body: "0 to 10"),
-            MyRichText( heading: "Medium: ", body: "0 to 50"),
-            MyRichText( heading: "Hard: ", body: "0 to 99"),
+            MyRichText( heading: "Easy: ", body: "1 to 10"),
+            MyRichText( heading: "Medium: ", body: "1 to 50"),
+            MyRichText( heading: "Hard: ", body: "1 to 100"),
             MyRichText( heading: "", body: "You can hit the reset button at the end of each round."),
                     
             Divider(

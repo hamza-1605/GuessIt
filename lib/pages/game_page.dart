@@ -67,7 +67,7 @@ class _GamePageState extends State<GamePage> {
                     children: [
                       // ranges guide
                       Text(
-                        gameOver ? '' : 'Guess the hidden number \nfrom 0 to ${widget.limit}.', 
+                        gameOver ? '' : 'Guess the hidden number \nfrom 1 to ${widget.limit}.', 
                         style: TextStyle( fontSize: 24, fontWeight: FontWeight.w600),
                         textAlign: TextAlign.center,
                       ),
@@ -302,7 +302,7 @@ class _GamePageState extends State<GamePage> {
 
   void generateRandomNumber(){
     var random = Random();
-    hiddenNumber = random.nextInt( widget.limit ); 
+    hiddenNumber = random.nextInt( widget.limit + 1 ); 
   }
 
   void getSoundAndVibrations(){

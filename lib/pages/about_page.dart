@@ -38,7 +38,7 @@ class AboutPage extends StatelessWidget {
               endIndent: 20.0,
             ),
 
-            MyRichText(heading: "Version: ", body: "1.1"),
+            MyRichText(heading: "Version: ", body: "1.1.1"),
             
             MyCloseButton(),
           ],
