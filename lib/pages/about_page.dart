@@ -26,10 +26,10 @@ class AboutPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           spacing: 15.0,
           children: [
-            
-            MyRichText(heading: "Developed by: ", body: "Hamza Sajid"),
-            MyRichText(heading: "Contact me on: ", body: '\nhamzasajid1165@gmail.com'),
 
+            MyRichText(heading: "Latest Update: ", body: "Added a new game mode, where CPU guesses the player's number"),
+            MyRichText(heading: "Version: ", body: "1.2.0"),
+         
             Divider(
               height: 20.0,
               thickness: 0.5,
@@ -37,9 +37,10 @@ class AboutPage extends StatelessWidget {
               indent: 20.0,
               endIndent: 20.0,
             ),
+               
+            MyRichText(heading: "Developed by: ", body: "Hamza Sajid"),
+            MyRichText(heading: "Contact me on: ", body: 'hamzasajid1165@gmail.com'),
 
-            MyRichText(heading: "Version: ", body: "1.1.1"),
-            
             MyCloseButton(),
           ],
         ),

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class MyRichText extends StatelessWidget {
   final String heading;
   final String body;
-  const MyRichText({super.key, required this.heading, required this.body});
+  final Color color;
+  const MyRichText({super.key, required this.heading, required this.body, this.color = Colors.white});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class MyRichText extends StatelessWidget {
           ),
         ],
         style: TextStyle(
-          color: Colors.white,
+          color: color,
           fontWeight: FontWeight.w700,
           fontSize: 15,
         ),

@@ -2,21 +2,22 @@ import 'dart:async';
 import 'dart:math';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:guess_number/widgets/game_action_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vibration/vibration.dart';
 
-class GamePage extends StatefulWidget {
-  const GamePage({super.key, required this.limit, required this.player, required this.sharedPref});
+class PlayerGuessesGamePage extends StatefulWidget {
+  const PlayerGuessesGamePage({super.key, required this.limit, required this.player, required this.sharedPref});
   
   final int limit;
   final AudioPlayer player;
   final SharedPreferences sharedPref;
 
   @override
-  State<GamePage> createState() => _GamePageState();
+  State<PlayerGuessesGamePage> createState() => _PlayerGuessesGamePageState();
 }
 
-class _GamePageState extends State<GamePage> {
+class _PlayerGuessesGamePageState extends State<PlayerGuessesGamePage> {
   TextEditingController controller = TextEditingController();
   bool revealNumber = false;
   bool gameOver = false;
@@ -195,11 +196,13 @@ class _GamePageState extends State<GamePage> {
                         ),
                       ) 
                       :
-                      FilledButton(
-                        onPressed: resetAll, 
-                        child: const Text("RESET"),
-                      ),
-                  
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8.0),
+                        child: GameActionButton(
+                          label: "Reset", 
+                          onPressed: () => resetAll(),
+                        ),
+                      )
                     ],
                   ),
                 ),
@@ -229,7 +232,7 @@ class _GamePageState extends State<GamePage> {
             message = '$guessed - Too High, try again';
           });
     } 
-        // Guessed Higher
+    // Guessed Higher
     else if (guessed < hiddenNumber) {
           if( remainingGuesses != 0 && vibrationOn ){
               Vibration.vibrate( duration: 150 );
@@ -302,7 +305,7 @@ class _GamePageState extends State<GamePage> {
 
   void generateRandomNumber(){
     var random = Random();
-    hiddenNumber = random.nextInt( widget.limit + 1 ); 
+    hiddenNumber = random.nextInt( widget.limit ) + 1; 
   }
 
   void getSoundAndVibrations(){

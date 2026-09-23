@@ -7,7 +7,8 @@ class MenuButton extends StatelessWidget {
   final VoidCallback function;
   final AudioPlayer player;
   final SharedPreferences sharedPref;
-  const MenuButton({super.key, required this.title, required this.function, required this.player, required this.sharedPref});
+  final double fontSize;
+  const MenuButton({super.key, required this.title, required this.function, required this.player, required this.sharedPref, this.fontSize = 30});
 
   @override
   Widget build(BuildContext context) {
@@ -32,9 +33,10 @@ class MenuButton extends StatelessWidget {
             child: Text(
               title , style: TextStyle(
                 color: Colors.white,
-                fontSize: 30,
+                fontSize: fontSize,
                 fontWeight: FontWeight.w700
               ),
+              textAlign: TextAlign.center,
             ),
           )
         ),

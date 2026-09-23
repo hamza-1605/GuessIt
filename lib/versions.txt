@@ -4,3 +4,5 @@ Version 1.1.0 - Added Sound & Vibration toggle buttons.
               - Added About Page.
 
 Version 1.1.1 - Fixed the bugs of having '0' as a possible number.
+
+Version 1.2.0 - Added a new game mode where the CPU guesses the player's number.
